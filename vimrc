@@ -11,7 +11,18 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
+
+" Syntax highlighting
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+
+" Theme(s)
 Plug 'morhetz/gruvbox'
+
+" CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " List ends here. Plugins become visible to Vim after this call
@@ -27,7 +38,7 @@ set termguicolors
 set background=dark 
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-explorer', 'coc-tsserver', 'coc-json']
+let g:coc_global_extensions = ['coc-css', 'coc-emmet', 'coc-explorer', 'coc-html', 'coc-json', 'coc-prettier', 'coc-svg', 'coc-tsserver', 'coc-yaml']
 
 
 " Coc Settings as per:
@@ -189,3 +200,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " CoC Explorer binding (<space>e to open)
 :nmap <space>e :CocCommand explorer<CR>
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
