@@ -17,6 +17,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
 
+" CoC extensions
+let g:coc_global_extensions = ['coc-tsserver']
+
 " Enable gruvbox
 autocmd vimenter * colorscheme gruvbox
 
