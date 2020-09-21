@@ -17,9 +17,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
 
-" CoC extensions
-let g:coc_global_extensions = ['coc-tsserver']
-
 " Enable gruvbox
 autocmd vimenter * colorscheme gruvbox
 
@@ -28,6 +25,10 @@ set termguicolors
 
 " Enable dark mode
 set background=dark 
+
+" CoC extensions
+let g:coc_global_extensions = ['coc-explorer', 'coc-tsserver', 'coc-json']
+
 
 " Coc Settings as per:
 " - https://github.com/neoclide/coc.nvim#example-vim-configuration
@@ -185,3 +186,6 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" CoC Explorer binding (<space>e to open)
+:nmap <space>e :CocCommand explorer<CR>

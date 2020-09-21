@@ -1,0 +1,10 @@
+# Ignore
+*
+
+# But keep these files
+!.gitignore
+!README.md
+!vimrc
+!coc-settings.json
+
+
