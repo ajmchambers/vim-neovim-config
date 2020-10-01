@@ -38,7 +38,19 @@ set termguicolors
 set background=dark 
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-css', 'coc-emmet', 'coc-explorer', 'coc-html', 'coc-json', 'coc-prettier', 'coc-svg', 'coc-tsserver', 'coc-yaml']
+let g:coc_global_extensions = [
+	\ 'coc-css',
+	\ 'coc-emmet',
+	\ 'coc-explorer',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-pairs',
+	\ 'coc-prettier',
+	\ 'coc-snippets',
+	\ 'coc-svg',
+	\ 'coc-tsserver',
+	\ 'coc-yaml'
+	\ ]
 
 
 " Coc Settings as per:
@@ -199,6 +211,19 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " CoC Explorer binding (<space>e to open)
-:nmap <space>e :CocCommand explorer<CR>
+:nmap <space>b :CocCommand explorer<CR>
 
+" prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" My custom setup (video vim18)
+" Map leader key to comma
+let mapleader = ','
+
+" Turn on line numbering
+":set nu
+
+" Turn on relative line numbering
+:set rnu
+
+
