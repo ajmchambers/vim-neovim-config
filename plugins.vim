@@ -25,5 +25,11 @@ Plug 'morhetz/gruvbox'
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Git
+Plug 'tpope/vim-fugitive'
+
+" airline
+Plug 'vim-airline/vim-airline'
+
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()

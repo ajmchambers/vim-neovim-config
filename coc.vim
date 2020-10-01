@@ -13,7 +13,6 @@ let g:coc_global_extensions = [
 	\ 'coc-yaml'
 	\ ]
 
-
 " Coc Settings as per:
 " - https://github.com/neoclide/coc.nvim#example-vim-configuration
 
@@ -171,20 +170,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" CoC Explorer binding (<space>e to open)
-:nmap <space>b :CocCommand explorer<CR>
+" CoC Explorer binding (<leader>b to open)
+:nmap <leader>b :CocCommand explorer<CR>
 
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-" My custom setup (video vim18)
-" Map leader key to comma
-let mapleader = ','
-
-" Turn on line numbering
-":set nu
-
-" Turn on relative line numbering
-:set rnu
-
-
