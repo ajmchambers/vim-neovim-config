@@ -58,3 +58,10 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 "# Airline
 let g:airline_powerline_fonts = 1
+
+"# coc-explorer open instead of netrw
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
+augroup END
