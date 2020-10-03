@@ -25,8 +25,15 @@ Plug 'morhetz/gruvbox'
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Multi cursor
+Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
+
+" Comments
+Plug 'preservim/nerdcommenter'
+
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " airline
 Plug 'vim-airline/vim-airline'

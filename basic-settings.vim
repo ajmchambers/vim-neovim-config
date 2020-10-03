@@ -65,3 +65,9 @@ augroup MyCocExplorer
   autocmd VimEnter * sil! au! FileExplorer *
   autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
 augroup END
+
+"# vim-gitgutter
+set signcolumn=yes
+"let g:gitgutter_enabled = 0
+nmap <leader>m :GitGutterToggle<CR>
+highlight! link SignColumn LineNr
