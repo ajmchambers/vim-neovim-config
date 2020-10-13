@@ -12,10 +12,10 @@ endif
 
 " only load if WSL
 " https://stackoverflow.com/questions/57014805/check-if-using-windows-console-in-vim-while-in-windows-subsystem-for-linux/57020870
-let uname = substitute(system('uname'),'\n','','')
-  if uname == 'Linux'
-    let lines = readfile("/proc/version")
-    if lines[0] =~ "Microsoft"
-      source ~/.vim/wsl.vim
-    endif
-endif
+"let uname = substitute(system('uname'),'\n','','')
+  "if uname == 'Linux'
+    "let lines = readfile("/proc/version")
+    "if lines[0] =~ "Microsoft"
+      "source ~/.vim/wsl.vim
+    "endif
+"endif
