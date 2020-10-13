@@ -171,7 +171,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " CoC Explorer binding (<leader>b to open)
-:nmap <leader>b :CocCommand explorer<CR>
+nmap <leader>b :CocCommand explorer<CR>
+nmap <space>b :CocCommand explorer<CR>
 
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile

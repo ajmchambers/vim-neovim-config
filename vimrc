@@ -3,4 +3,5 @@ if !exists('g:vscode')
 	source ~/.vim/plugins.vim
 	source ~/.vim/coc.vim
 	source ~/.vim/basic-settings.vim
+	source ~/.vim/termux.vim
 endif
