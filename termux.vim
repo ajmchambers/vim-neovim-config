@@ -1,4 +1,4 @@
-"# Enable copy cut and paste using system clipboard
+"# If termux enable copy cut and paste using system clipboard
 au TextYankPost * call system('termux-clipboard-set &', @")
 function Paste(p)
   let sysclip=system('termux-clipboard-get')
