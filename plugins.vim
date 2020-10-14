@@ -14,7 +14,8 @@ call plug#begin('~/.vim/plugged')
 
 " Syntax highlighting
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
