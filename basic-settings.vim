@@ -54,6 +54,9 @@ set showmatch
 "# Reread files edited outside of vim
 set autoread
 
+"# Nerd commenter align left
+let g:NERDDefaultAlign = 'left'
+
 "# Searching
 set incsearch
 set hlsearch
@@ -63,13 +66,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-
-"# coc-explorer open instead of netrw
-augroup MyCocExplorer
-  autocmd!
-  autocmd VimEnter * sil! au! FileExplorer *
-  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
-augroup END
 
 "# vim-gitgutter
 set signcolumn=yes
