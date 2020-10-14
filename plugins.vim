@@ -19,6 +19,9 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 
+" Only display relative numbering on active buffer
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+
 " Theme(s)
 Plug 'morhetz/gruvbox'
 
@@ -30,6 +33,9 @@ Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 
 " Comments
 Plug 'preservim/nerdcommenter'
+
+" Editor config support
+Plug 'editorconfig/editorconfig-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'

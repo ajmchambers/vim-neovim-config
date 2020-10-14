@@ -51,6 +51,9 @@ set showcmd
 set cursorline
 set showmatch
 
+"# Reread files edited outside of vim
+set autoread
+
 "# Searching
 set incsearch
 set hlsearch
@@ -58,6 +61,8 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 "# Airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 "# coc-explorer open instead of netrw
 augroup MyCocExplorer
@@ -71,3 +76,6 @@ set signcolumn=yes
 "let g:gitgutter_enabled = 0
 nmap <leader>m :GitGutterToggle<CR>
 highlight! link SignColumn LineNr
+
+"# Nerdtree
+"map <C-n> :NERDTreeToggle<CR>
