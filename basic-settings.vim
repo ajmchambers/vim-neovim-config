@@ -74,4 +74,9 @@ nmap <leader>m :GitGutterToggle<CR>
 highlight! link SignColumn LineNr
 
 "# Nerdtree toggle with CTRL+n
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+
+"# Nerdtree git settings
+let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusShowIgnored = 1
