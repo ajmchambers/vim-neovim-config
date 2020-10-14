@@ -34,6 +34,9 @@ Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 " Comments
 Plug 'preservim/nerdcommenter'
 
+" Nerdtree
+Plug 'scrooloose/nerdtree'
+
 " Editor config support
 Plug 'editorconfig/editorconfig-vim'
 

@@ -73,5 +73,5 @@ set signcolumn=yes
 nmap <leader>m :GitGutterToggle<CR>
 highlight! link SignColumn LineNr
 
-"# Nerdtree
-"map <C-n> :NERDTreeToggle<CR>
+"# Nerdtree toggle with CTRL+n
+map <C-n> :NERDTreeToggle<CR>
