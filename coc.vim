@@ -169,12 +169,12 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" CoC Explorer binding (<leader>b to open)
-nmap <leader>b :CocCommand explorer<CR>
-nmap <space>b :CocCommand explorer<CR>
-
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" CoC Explorer binding (<leader>b to open)
+"nmap <leader>b :CocCommand explorer<CR>
+"nmap <space>b :CocCommand explorer<CR>
 
 " coc-explorer defaults
 "let g:coc_explorer_global_presets = {
