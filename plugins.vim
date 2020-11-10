@@ -13,12 +13,12 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 
 " Syntax highlighting
-Plug 'pangloss/vim-javascript'
+"Plug 'pangloss/vim-javascript'
 "Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'jparise/vim-graphql'
+"Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+"Plug 'jparise/vim-graphql'
 
 " Only display relative numbering on active buffer
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
