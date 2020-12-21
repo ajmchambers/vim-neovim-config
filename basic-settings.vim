@@ -80,3 +80,7 @@ let NERDTreeShowHidden = 1
 "# Nerdtree git settings
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowIgnored = 1
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
