@@ -7,4 +7,6 @@
 !vimrc
 !coc-settings.json
 !*.vim
-
+!backup/
+!swap/
+!undo/
